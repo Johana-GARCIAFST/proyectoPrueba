@@ -2,3 +2,158 @@
     margin: 0px;
     padding: 0px;
 }
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: aquamarine;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    margin: 0px 5px;
+}
+.seccionuno{
+    width:50% ;
+    height: max-content;
+}
+
+.imagen{
+width: 100%;
+height: 50%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+.imagen img{
+    width: 100%;
+    height: 200px;
+}
+
+.secciondos{
+width: 50%;
+height: 100%;
+
+}
+.secciondos img{
+width: 100%;
+height: 100%;
+}
+
+.tarjeta{
+    width:350px ;
+    height: 350px;
+    border: solid 3px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(150, 186, 252, 0.6);
+}
+
+p{
+    font-family: cursive;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.boton{
+    font-size: 30px;
+    color: black;
+}
+
+button{
+    margin: 0px 20px;
+}
+
+i{
+    margin: 0px 20px;
+}
+
+@media screen and (max-width: 619px) {
+    header{
+        height: 8%;
+    }
+    main{
+        height: max-content;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+    
+    .secciondos{
+        width: 80%;
+        height: fit-content; 
+        margin: 20px 0px;
+        }
+
+    .seccionuno{
+         width: 80%;
+         height: 100%;
+     }
+
+     .imagen img{
+        width: 100%;
+        height: 120px;
+    }
+
+    .tarjeta{
+        width:310px ;
+        height: 220px;
+        margin-bottom: 20px;
+    }     
+}
+
+@media screen and (min-width: 620px) and (max-width: 860px) {
+    header{
+        height: 8%;
+    }
+    main{
+        height: max-content;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+    
+    .secciondos{
+        width: 80%;
+        height: fit-content; 
+        margin: 20px 0px;
+        }
+
+    .seccionuno{
+         width: 100%;
+         height: 100%;
+     }
+
+     .imagen img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .tarjeta{
+        width:600px ;
+        height: 500px;
+        margin-bottom: 20px;
+    }     
+}
